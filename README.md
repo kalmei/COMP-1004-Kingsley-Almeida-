@@ -12,4 +12,4 @@ The Javascript file contains the primary functions of the maker which include: b
 All files are separate and are called in the HTML via links/references.
 
 
-PS: The Applcation MUST BE RAN on Microsoft Edge and Google Chrome. There a display issues on Firefox but all features run properly otherwise. 
+PS: The Applcation MUST BE RAN on Microsoft Edge or Google Chrome. There a display issues on Firefox but all features run properly otherwise. 
