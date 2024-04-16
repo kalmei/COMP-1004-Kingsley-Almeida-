@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Weekly Planner </title>
+<link rel = "stylesheet" type = "text/css" href = "Weekly_planner.css"/>
+</head>
+<body>
+<table border = 2 id = "plannerTable">
+<tr>
+<td rowspan = 3> Time </td>
+<td> <button onclick = "ChangeMonthLeft(), saveState()"> PREVIOUS </button></td>
+<th id = "month_id" colspan = 5> January </th>
+<td> <button onclick = "ChangeMonthRight(), saveState()"> NEXT </button> </td>
+</tr>
+<tr>
+<td> <button onclick = "ChangeWeekLeft(), saveState()"> prev week </button> </td>
+<th id = "week_id" colspan = 5> Week 1 </th>
+<td> <button onclick = "ChangeWeekRight(), saveState()"> next week </button> </td>
+</tr>
+<tr> 
+<th> Monday </th> 
+<th> Tuesday </th>
+<th> Wednesday </th>
+<th> Thursday </th>
+<th> Friday </th>
+<th> Saturday </th>
+<th> Sunday </th>
+</tr>
+<tr>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+</tr>
+<tr>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+</tr>
+<tr>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+</tr>
+<tr>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+</tr>
+<tr>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+</tr>
+<tr>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+</tr>
+<tr>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+</tr>
+<tr>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+</tr>
+<tr>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+</tr>
+<tr>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+</tr>
+<tr>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+</tr>
+<tr>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+</tr>
+<tr>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+</tr>
+<tr>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+</tr>
+<tr>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+<td contenteditable ="true"></td>
+</tr>
+</table>
+</body>
+<script type = "text/JavaScript" src = "Weekly_planner.js"> </script>
+<script> 
+loadData();
+saveData();
+addContentEditableListeners();
+ </script>
+
+</html>
+
