@@ -1,4 +1,5 @@
 // ----------------------------------------------BUTTON FUNCTIONS---------------------------------------------------------------------------------------------
+
 var month_name = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 var current_month = 0;
 var week_name = ["Week 1", "Week 2", "Week 3", "Week 4"];
@@ -62,11 +63,6 @@ saveState();
 }
 
 
-// run a function to read data 
-// a function to destroy the view and recreating the view from the data 
-// pass the data as an argument in insertData(); 
-// html form which will call a function to add data and then call a function to redisplay.
-
 
 //---------------------------------------------editing content and saving------------------------------------------------------------------
 
@@ -117,19 +113,3 @@ function loadData() {
 	}
 }
 
-
-	
-	
-	
-	
-	
-	
-	
-	// 07/02/2024 Discussion with Sebastian (Sprint)
-	
-// a 2d array/list that will recreate based on which month is being accessed via the button and then implement the save function to it.
-// CSS for aesthetic
-/* When core concept fully finished, (possible choices)
-- adding more stuff (animations, transitions, etc)
-- account system (saving data to accounts)
-- script to download*/
