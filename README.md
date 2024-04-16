@@ -5,6 +5,7 @@ Some key features include:
 -	Month and week navigation buttons.
 -	Local storage integration.
 -	User-friendly design and easy to view.
+
 The source code is in the HTML file which contains the layout of the application
 The CSS file includes the style settings for font and table borders.
 The Javascript file contains the primary functions of the maker which include: button navigations, saving and loading data.
